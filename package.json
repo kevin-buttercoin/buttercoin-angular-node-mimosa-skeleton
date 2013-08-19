@@ -1,0 +1,35 @@
+{
+  "name": "buttercoin-angular-node-mimosa-skeleton",
+  "version": "0.0.1",
+  "description": "A skeleton for node, angular and mimosa projects",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/buttercoin/authentication.git"
+  },
+  "dependencies": {
+    "express": "3.3.4",
+    "coffee-script": "1.6.3",
+    "consolidate": "0.9.1",
+    "ejs": "0.8.4",
+    "ejs-locals": "1.0.2"
+  },
+  "devDependencies": {
+    "chai": "*",
+    "mocha": "*",
+    "should": "*",
+    "coffee-script": "*",
+    "sinon": "*",
+    "sinon-chai": "*"
+  },
+  "keywords": [
+    "buttercoin",
+    "bitcoin",
+    "skeleton"
+  ],
+  "author": "Bennett Hoffman, Kevin Adams",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/kevin-buttercoin/buttercoin-angular-mimosa-skeleton/issues"
+  }
+}

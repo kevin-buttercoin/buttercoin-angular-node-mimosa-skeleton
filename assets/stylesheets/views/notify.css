@@ -1,0 +1,70 @@
+/**
+ * Bootstrap-notify.less
+ *
+ * @author Vitaly @Laboratory
+ * @author Nijiko Yonskai
+ * @copyright 2012 Vitaly
+ * @copyright 2013 Nijiko Yonskai
+ */
+
+.notifications.top-right {
+  right: 10px;
+}
+.notifications.top-left {
+  left: 10px;
+}
+.notifications.top-center {
+  top: 10px;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+.notifications.top-center > div {
+  margin: 10px auto;
+  width: 35%;
+  text-align: center;
+}
+.notifications.bottom-left {
+  bottom: 10px;
+}
+.notifications.bottom-right {
+  bottom: 10px;
+}
+.notifications > div {
+  position: relative;
+  z-index: 9999;
+  margin: 5px 0px;
+}
+.notifications.center {
+  top: 48%;
+  left: 0;
+  width: 100%;
+}
+.notifications.center > div {
+  margin: 5px auto;
+  width: 50%;
+  text-align: center;
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .notifications.top-center > div {
+    margin: 0;
+    width: 90%;
+    text-align: center;
+  }
+}
+
