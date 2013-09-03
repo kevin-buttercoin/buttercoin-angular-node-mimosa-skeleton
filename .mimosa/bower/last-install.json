@@ -20,8 +20,7 @@
     "chosen": "https://github.com/harvesthq/chosen/releases/download/1.0.0/chosen_v1.0.0.zip",
     "animate.css": "*"
   },
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "resolutions": {
     "jquery": "2.0.3"
   }
