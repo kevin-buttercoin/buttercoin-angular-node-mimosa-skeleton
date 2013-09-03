@@ -1,14 +1,15 @@
 exports.config =
+  minMimosaVersion: "1.0.0"
+  require:
+    tracking:
+      enabled: true
   server:
-    defaultServer:
-      onePager: true
     views:
-      extension: ".ejs"
+      extension: "ejs"
       compileWith: "ejs"
-      path: "assets/views"
   modules:['bower','require','server','minify','live-reload','web-package', 'combine']
-  minify:
-    exclude:[/\.min\./, "javascripts/main.js"]
+  # minify:
+    # exclude:[/\.min\./, "javascripts/main.js"]
   bower:
     copy:
       strategy:
@@ -23,16 +24,9 @@ exports.config =
       {
         folder: "stylesheets/vendor"
         output: "stylesheets/vendor/vendor.css"
-        exclude: null
-        order: null
-      },
+      }
       {
         folder: "stylesheets/views"
-        output: "stylesheets/vendor/application.css"
-        exclude: null
-        order: null
+        output: "stylesheets/application.css"
       }
     ]
-    removeCombined:
-      enabled: true
-      exclude: []

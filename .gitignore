@@ -1,4 +1,3 @@
-.mimosa
 tmp
 public
-assets/**/vendor
+node_modules

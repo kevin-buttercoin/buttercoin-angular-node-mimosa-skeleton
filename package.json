@@ -4,7 +4,7 @@
   "description": "A skeleton for node, angular and mimosa projects",
   "repository": {
     "type": "git",
-    "url": "https://github.com/buttercoin/authentication.git"
+    "url": "https://github.com/kevin-buttercoin/buttercoin-angular-node-mimosa-skeleton"
   },
   "dependencies": {
     "express": "3.3.4",

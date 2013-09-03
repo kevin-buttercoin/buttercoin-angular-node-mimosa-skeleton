@@ -1,0 +1,103 @@
+{
+  "shims": {
+    "/public/javascripts/main.js": {
+      "app": [
+        "bootstrap",
+        "socket.io",
+        "EventEmitter",
+        "bootstrapSwitch",
+        "bootstrapNotify",
+        "chosen",
+        "moment",
+        "jQuery",
+        "underscore"
+      ],
+      "bootstrap": [
+        "jQuery"
+      ],
+      "bootstrapSwitch": [
+        "jQuery",
+        "bootstrap"
+      ],
+      "bootstrapNotify": [
+        "jQuery",
+        "bootstrap"
+      ],
+      "chosen": [
+        "jQuery"
+      ]
+    }
+  },
+  "deps": {
+    "/public/javascripts/app.js": [
+      "angular"
+    ],
+    "/public/javascripts/main.js": [
+      "controllers/main"
+    ],
+    "/public/javascripts/controllers/main.js": [
+      "app"
+    ]
+  },
+  "aliases": {
+    "/public/javascripts/main.js": {
+      "angular": "vendor/angular",
+      "jQuery": "vendor/jquery",
+      "bootstrap": "vendor/bootstrap",
+      "bootstrapSwitch": "vendor/bootstrap-switch",
+      "bootstrapNotify": "vendor/bootstrap-notify",
+      "chosen": "vendor/chosen.jquery",
+      "moment": "vendor/moment",
+      "socket.io": "vendor/io",
+      "EventEmitter": "vendor/EventEmitter",
+      "underscore": "vendor/underscore"
+    }
+  },
+  "mappings": {
+    "/public/javascripts/main.js": null
+  },
+  "originalConfig": {
+    "shim": {
+      "app": [
+        "bootstrap",
+        "socket.io",
+        "EventEmitter",
+        "bootstrapSwitch",
+        "bootstrapNotify",
+        "chosen",
+        "moment",
+        "jQuery",
+        "underscore"
+      ],
+      "bootstrap": [
+        "jQuery"
+      ],
+      "bootstrapSwitch": [
+        "jQuery",
+        "bootstrap"
+      ],
+      "bootstrapNotify": [
+        "jQuery",
+        "bootstrap"
+      ],
+      "chosen": [
+        "jQuery"
+      ]
+    },
+    "paths": {
+      "angular": "vendor/angular",
+      "jQuery": "vendor/jquery",
+      "bootstrap": "vendor/bootstrap",
+      "bootstrapSwitch": "vendor/bootstrap-switch",
+      "bootstrapNotify": "vendor/bootstrap-notify",
+      "chosen": "vendor/chosen.jquery",
+      "moment": "vendor/moment",
+      "socket.io": "vendor/io",
+      "EventEmitter": "vendor/EventEmitter",
+      "underscore": "vendor/underscore"
+    }
+  },
+  "requireFiles": [
+    "/public/javascripts/main.js"
+  ]
+}

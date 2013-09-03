@@ -2,9 +2,7 @@ express = require('express')
 engines = require('consolidate')
 
 exports.startServer = (config, callback) ->
-
   port = process.env.PORT or config.server.port
-
 
   app = express()
   server = app.listen port, ->
@@ -23,22 +21,19 @@ exports.startServer = (config, callback) ->
     app.use express.compress()
     app.use config.server.base, app.router
     app.use express.static(config.watch.compiledDir)
-  
+
   app.configure 'development', ->
     app.use express.errorHandler( {dumpExceptions: true, showStack: true} )
 
   app.configure 'production', ->
     app.use express.errorHandler()
 
-
-  
   options =
     reload:    config.liveReload?.enabled?
     optimize:  config.isOptimize ? false
     cachebust: if process.env.NODE_ENV isnt "production" then "?b=#{(new Date()).getTime()}" else ''
-  
+
   app.get '/', (req, res) -> res.render 'index', options
 
-    
   callback(server)
 
