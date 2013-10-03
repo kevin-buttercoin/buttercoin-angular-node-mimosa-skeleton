@@ -1,6 +1,6 @@
 {
   "shims": {
-    "/public/javascripts/main.js": {
+    "/javascripts/main.js": {
       "app": [
         "bootstrap",
         "socket.io",
@@ -29,18 +29,18 @@
     }
   },
   "deps": {
-    "/public/javascripts/app.js": [
+    "/javascripts/app.js": [
       "angular"
     ],
-    "/public/javascripts/main.js": [
-      "controllers/main"
-    ],
-    "/public/javascripts/controllers/main.js": [
+    "/javascripts/controllers/main.js": [
       "app"
+    ],
+    "/javascripts/main.js": [
+      "controllers/main"
     ]
   },
   "aliases": {
-    "/public/javascripts/main.js": {
+    "/javascripts/main.js": {
       "angular": "vendor/angular",
       "jQuery": "vendor/jquery",
       "bootstrap": "vendor/bootstrap",
@@ -54,7 +54,10 @@
     }
   },
   "mappings": {
-    "/public/javascripts/main.js": null
+    "/javascripts/main.js": null
+  },
+  "packages": {
+    "/javascripts/main.js": null
   },
   "originalConfig": {
     "shim": {
@@ -98,6 +101,6 @@
     }
   },
   "requireFiles": [
-    "/public/javascripts/main.js"
+    "/javascripts/main.js"
   ]
 }
