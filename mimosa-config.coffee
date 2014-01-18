@@ -7,7 +7,8 @@ exports.config =
     views:
       extension: "ejs"
       compileWith: "ejs"
-  modules:['bower','require','server','minify','live-reload','web-package', 'combine']
+      path: "assets/views"
+  modules:['bower','require','server','minify','web-package', 'combine']
   # minify:
     # exclude:[/\.min\./, "javascripts/main.js"]
   bower:

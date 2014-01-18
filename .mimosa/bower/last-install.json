@@ -3,12 +3,12 @@
   "version": "0.0.0",
   "dependencies": {
     "jquery": "2.0.3",
-    "angular": "~1.0.5",
+    "angular": "~1.0.8",
     "json3": "https://github.com/buttercoin/json3.git#gh-pages",
     "es5-shim": "~2.0.8",
-    "angular-resource": "~1.0.5",
-    "angular-cookies": "~1.0.5",
-    "angular-sanitize": "~1.0.5",
+    "angular-resource": "~1.0.8",
+    "angular-cookies": "~1.0.8",
+    "angular-sanitize": "~1.0.8",
     "bootstrap": "2.3.2",
     "bootstrap-switch": "master",
     "bootstrap-notify": "master",
@@ -20,8 +20,5 @@
     "chosen": "https://github.com/harvesthq/chosen/releases/download/1.0.0/chosen_v1.0.0.zip",
     "animate.css": "*"
   },
-  "devDependencies": {},
-  "resolutions": {
-    "jquery": "2.0.3"
-  }
+  "devDependencies": {}
 }

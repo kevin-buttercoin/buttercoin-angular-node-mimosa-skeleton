@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app>
   <head>
     <title>Mimosa</title>
 
@@ -20,11 +20,7 @@
   </head>
   <body>
 
-    <p>Welcome to Mimosa</p>
-
-    <% if (optimize) { %>
-    <p>Optimized mode.  You are getting a single RequireJS optimized JavaScript file which includes all the page dependencies.</p>
-    <% } %>
+    <div ng-view></div>
 
   </body>
 </html>
