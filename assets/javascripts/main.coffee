@@ -1,6 +1,12 @@
 requirejs.config
   baseUrl: './javascripts'
   paths:
+    c: 'controllers'
+    # Uncomment these lines when you add files in these directories
+    # Also add each file to the require section below (e.g. 'c/main', 'd/your-directive', etc)
+    #d: 'directives'
+    #f: 'filters'
+    #s: 'services'
     angular: 'vendor/angular'
     jQuery: 'vendor/jquery'
     bootstrap: 'vendor/bootstrap'
@@ -18,33 +24,8 @@ requirejs.config
     bootstrapNotify: ['jQuery', 'bootstrap']
     chosen: ['jQuery']
 
-controllers = [
-  'main'
-]
 
-directives = [
-]
 
-filters = [
-]
-
-services = [
-]
-
-dependencies = []
-
-for c in controllers
-  dependencies.push "controllers/#{c}"
-
-for d in directives
-  dependencies.push "directives/#{d}"
-
-for f in filters
-  dependencies.push "filters/#{f}"
-
-for s in services
-  dependencies.push "services/#{s}"
-
-require dependencies, ->
+require ['c/main'], ->
   angular.bootstrap(document, ['buttercoinApp'])
 

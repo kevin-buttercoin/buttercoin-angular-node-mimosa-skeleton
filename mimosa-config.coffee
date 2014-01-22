@@ -8,9 +8,9 @@ exports.config =
       extension: "ejs"
       compileWith: "ejs"
       path: "assets/views"
-  modules:['bower','require','server','minify','web-package', 'combine']
-  # minify:
-    # exclude:[/\.min\./, "javascripts/main.js"]
+  modules:['bower','require','server','minify-js','minify-css','web-package', 'combine']
+  minifyJS:
+    exclude:[/\.min\./, "javascripts/main.js"]
   bower:
     copy:
       strategy:

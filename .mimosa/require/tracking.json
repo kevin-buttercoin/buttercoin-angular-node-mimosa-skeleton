@@ -36,7 +36,7 @@
       "app"
     ],
     "/javascripts/main.js": [
-      "controllers/main"
+      "c/main"
     ],
     "/javascripts/templates.js": [
       "vendor/ejs-filters"
@@ -45,6 +45,7 @@
   },
   "aliases": {
     "/javascripts/main.js": {
+      "c": "controllers",
       "angular": "vendor/angular",
       "jQuery": "vendor/jquery",
       "bootstrap": "vendor/bootstrap",
@@ -92,6 +93,7 @@
       ]
     },
     "paths": {
+      "c": "controllers",
       "angular": "vendor/angular",
       "jQuery": "vendor/jquery",
       "bootstrap": "vendor/bootstrap",
