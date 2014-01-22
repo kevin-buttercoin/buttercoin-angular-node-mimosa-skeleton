@@ -37,7 +37,11 @@
     ],
     "/javascripts/main.js": [
       "controllers/main"
-    ]
+    ],
+    "/javascripts/templates.js": [
+      "vendor/ejs-filters"
+    ],
+    "/javascripts/vendor/ejs-filters.js": []
   },
   "aliases": {
     "/javascripts/main.js": {

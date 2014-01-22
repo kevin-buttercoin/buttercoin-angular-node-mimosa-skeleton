@@ -4,8 +4,8 @@ define ['angular'], ->
       .config ($routeProvider) ->
         $routeProvider
           .when '/',
-            templateUrl: 'views/whitelabel.html'
-            controller: 'WhiteLabelCtrl'
+            templateUrl: 'views/main.html'
+            controller: 'MainCtrl'
           .otherwise
             redirectTo: '/'
 

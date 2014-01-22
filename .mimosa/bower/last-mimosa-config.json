@@ -15,6 +15,7 @@
     },
     "forceLatest": true,
     "exclude": [],
+    "unknownMainFullCopy": false,
     "overridesArrays": {
       "chosen": [
         "chosen.jquery.js",
