@@ -1,5 +1,18 @@
 exports.config =
-  minMimosaVersion: "1.0.0"
+  minMimosaVersion: "2.0.0"
+  modules:[
+    'bower'
+    'require'
+    'server'
+    'minify-js'
+    'minify-css'
+    'web-package'
+    'combine'
+    'coffeescript'
+    'copy'
+    'less']
+  watch:
+    exclude:[/[/\\](\.|~)[^/\\]+$/, /.ejs$/]
   require:
     tracking:
       enabled: true
@@ -8,7 +21,6 @@ exports.config =
       extension: "ejs"
       compileWith: "ejs"
       path: "assets/views"
-  modules:['bower','require','server','minify-js','minify-css','web-package', 'combine']
   minifyJS:
     exclude:[/\.min\./, "javascripts/main.js"]
   bower:
